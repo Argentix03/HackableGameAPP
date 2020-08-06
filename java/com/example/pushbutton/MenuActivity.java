@@ -19,6 +19,7 @@ public class MenuActivity extends AppCompatActivity {
 
     // Polymorph generic Object into MainActivity with a cast using the wrapper class from the level array with an index
     public void goToLevel(int level) {
+        level -= 1;
         Intent levelActivity = new Intent(this, (Class<MainActivity>) levels[level]);
         this.startActivity(levelActivity);
     }
@@ -34,4 +35,6 @@ public class MenuActivity extends AppCompatActivity {
     public void level9(View view) { goToLevel(9); }
     public void level10(View view) { goToLevel(10); }
     public void level11(View view) { goToLevel(11); }
+
+
 }
