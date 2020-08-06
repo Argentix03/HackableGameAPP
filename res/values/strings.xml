@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PushButton</string>
+    <string name="push_button">Push Button</string>
+    <string name="hello_message">Hello World</string>
+    <string name="you_win_click_one_more_time_for_the_next_level">You WIN! Reach 20 presses for the next level</string>
+    <string name="skip">Skip</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="button">Button</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="button3">Button 3</string>
+    <string name="button4">Button 4</string>
+</resources>
