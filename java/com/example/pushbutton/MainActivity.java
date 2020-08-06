@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void createMyButton() {push_button = findViewById(R.id.push_button_1);}
     public void createMyWinText() {wintext = findViewById(R.id.wintext);}
-    public void createSkipButton() {skip_button = findViewById(R.id.skip_button);}
+    public void createSkipButton() {skip_button = findViewById(R.id.menu_button);}
 
     @SuppressLint("ClickableViewAccessibility")
     public void pushTheButton(View view) {
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "WIN!!", Toast.LENGTH_SHORT).show();
             wintext = findViewById(R.id.wintext);
             wintext.setVisibility(View.VISIBLE);
-            skip_button = findViewById(R.id.skip_button);
+            skip_button = findViewById(R.id.menu_button);
             skip_button.setVisibility(View.VISIBLE);
             up_down = 0; //reverse count
             button_presses -= 1;
@@ -52,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
     public void nextLevel(View view) {
         Intent nextActivity = new Intent(MainActivity.this, MainActivity2.class);
         MainActivity.this.startActivity(nextActivity);
+    }
+
+    public void goToMenu(View view) {
+        Intent menuActivity = new Intent(this, MenuActivity.class);
+        this.startActivity(menuActivity);
     }
 
     @Override

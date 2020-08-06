@@ -3,12 +3,21 @@
     <string name="push_button">Push Button</string>
     <string name="hello_message">Hello World</string>
     <string name="you_win_click_one_more_time_for_the_next_level">You WIN! Reach 20 presses for the next level</string>
-    <string name="skip">Skip</string>
+    <string name="menu">Menu</string>
     <string name="level_2">Level 2</string>
     <string name="level_3">Level 3</string>
+    <string name="level_4">Level 4</string>
+    <string name="level_5">Level 5</string>
+    <string name="level_6">Level 6</string>
+    <string name="level_7">Level 7</string>
+    <string name="level_8">Level 8</string>
+    <string name="level_9">Level 9</string>
+    <string name="level_10">Level 10</string>
+    <string name="level_11">Level 11</string>
     <string name="button">Button</string>
     <string name="button1">Button 1</string>
     <string name="button2">Button 2</string>
     <string name="button3">Button 3</string>
     <string name="button4">Button 4</string>
+    <string name="level_1">Level 1</string>
 </resources>
