@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -19,11 +20,13 @@ public class MainActivity3 extends AppCompatActivity {
     int flippedCard = 0; // keeps record of the last flipped card. 0 means no card is flipped.
     int fails = 0; // reveals menu on 5 fails
     ArrayList<Button> buttons = new ArrayList<Button>(); // contains buttons active, clears on reset.
+    TextView pairsMatched;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+        pairsMatched = findViewById(R.id.Lv3Progress);
     }
 
     public void flipCard(int button_num, View view, int buttonID) {
@@ -35,6 +38,7 @@ public class MainActivity3 extends AppCompatActivity {
         if (flippedCard != 0) {
             if (checkPair(flippedCard, button_num)) {
                 Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+                pairsMatched.setText(String.valueOf(buttons.size() / 2) + "/5");
                 winCheck();
             }
             else {
@@ -53,16 +57,18 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             }
             flippedCard = 0;
+
         } else
             flippedCard = button_num;
     }
 
     public boolean checkPair(int button1, int button2) {
-        return (colours[button1 - 1] == colours[button2 - 1]);
+        return (colours[button1 - 1] == colours[button2 - 1] && !(button1 == button2));
     }
 
     public void reset() {
         for (Button button : buttons) {
+            pairsMatched.setText("0/5");
             button.setBackgroundResource(android.R.drawable.btn_default);
         }
         buttons.clear();

@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity4">
 
+    <TextView
+        android:id="@+id/lv4Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/level_4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_level4"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:onClick="onPress"
+        android:text="@string/button_level4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/get_me_here"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/getMeHere"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="GET ME HERE" />
 </androidx.constraintlayout.widget.ConstraintLayout>
