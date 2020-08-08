@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/lv6Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/level_6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reveal_switch_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/reveal_switch_label"
+        app:layout_constraintEnd_toStartOf="@+id/reveal_switch"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv6Title2" />
+
+    <Switch
+        android:id="@+id/reveal_switch"
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="124dp"
+        android:checked="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv6Title2"
+        tools:checked="false" />
+
+    <Button
+        android:id="@+id/ing_vodka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="90dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_vodka"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv6Title2" />
+
+    <Button
+        android:id="@+id/ing_ice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_ice"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_vodka" />
+
+    <Button
+        android:id="@+id/ing_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_coffee_liq"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_ice" />
+
+    <Button
+        android:id="@+id/ing_cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_cream"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_coffee" />
+
+    <Button
+        android:id="@+id/ing_olives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_wrong_olives"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_cream" />
+
+    <Button
+        android:id="@+id/ing_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_milk"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_olives" />
+
+    <Button
+        android:id="@+id/ing_rum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_wrong_rum"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/ing_ice"
+        app:layout_constraintTop_toBottomOf="@+id/ing_vodka" />
+
+    <Button
+        android:id="@+id/ing_choc_powder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_choc_powder"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/ing_cream"
+        app:layout_constraintTop_toBottomOf="@+id/ing_coffee" />
+
+    <Button
+        android:id="@+id/ing_coffee_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addIngredient"
+        android:text="@string/ing_coffee_bean"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/ing_olives"
+        app:layout_constraintTop_toBottomOf="@+id/ing_choc_powder" />
+
+    <ImageView
+        android:id="@+id/img_cocktail"
+        android:layout_width="106dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/white_russian"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/russian_cocktail" />
+
+    <TextView
+        android:id="@+id/cocktail_progress"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cocktail_progress"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/img_cocktail"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MenuActivity extends AppCompatActivity {
     // An array of exclusively Activity objects compatible as an intent parameter. ordered by level.
-    Class[] levels = {MainActivity.class, MainActivity2.class, MainActivity3.class, MainActivity4.class};
+    Class[] levels = {MainActivity.class, MainActivity2.class, MainActivity3.class, MainActivity4.class, MainActivity5.class, MainActivity6.class, MainActivity7.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,6 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
-    // Polymorph generic Object into MainActivity with a cast using the wrapper class from the level array with an index
     public void goToLevel(int level) {
         level -= 1;
         Intent levelActivity = new Intent(this, levels[level]);

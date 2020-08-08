@@ -28,4 +28,18 @@
     <string name="button_level4">PRESS ME</string>
     <string name="getMeHere">==============================================\n                 GET ME HERE</string>
     <string name="_0_5">0/5</string>
+    <string name="holdButton">Hold</string>
+    <string name="timer">00:00</string>
+    <string name="reveal_switch_label">Reveal pegi-18 content</string>
+    <string name="ing_vodka">37 1/2 ml Vodka</string>
+    <string name="ing_coffee_liq"> 25 ml Coffee Liqueur</string>
+    <string name="ing_cream">15 ml Cream</string>
+    <string name="ing_milk">15 ml Milk</string>
+    <string name="ing_choc_powder">Chocolate Powder</string>
+    <string name="ing_coffee_bean">Coffee Bean</string>
+    <string name="ing_ice">Ice</string>
+    <string name="ing_wrong_rum">10 ml Rum</string>
+    <string name="ing_wrong_olives">2 Olives</string>
+    <string name="cocktail_progress">0 %</string>
+    <string name="white_russian">white russian</string>
 </resources>

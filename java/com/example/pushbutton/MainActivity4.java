@@ -87,7 +87,7 @@ public class MainActivity4 extends AppCompatActivity {
     }
 
     public void nextLevel() {
-        Intent nextActivity = new Intent(this, MainActivity4.class);
+        Intent nextActivity = new Intent(this, MainActivity5.class);
         this.startActivity(nextActivity);
     }
 }
