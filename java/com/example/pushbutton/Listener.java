@@ -2,6 +2,7 @@ package com.example.pushbutton;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.widget.TextView;
 
 public class Listener {
@@ -21,7 +22,22 @@ public class Listener {
             return nextActivity;
         }
     }
+
     protected static void time() {
         MainActivity8.cnt.cancel();
+    }
+
+    protected static Intent secret(String msg, Activity act) {
+        String secret = "";
+        for (int i = 0; i < msg.length(); i++) {
+            if (Character.isUpperCase(msg.charAt(i)))
+                secret += msg.charAt(i);
+        }
+        secret += "!!";
+        //Log.w("Secret:", secret);
+        if (secret.contentEquals("AWESOME!!"))
+            return new Intent(act, MainActivity11.class);
+        else
+            return null;
     }
 }
