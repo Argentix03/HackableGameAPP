@@ -42,4 +42,9 @@
     <string name="ing_wrong_olives">2 Olives</string>
     <string name="cocktail_progress">0 %</string>
     <string name="white_russian">white russian</string>
+    <string name="message_label">Message</string>
+    <string name="send_button">Send</string>
+    <string name="message">Message</string>
+    <string name="response">Response:</string>
+    <string name="patience">Patience</string>
 </resources>
